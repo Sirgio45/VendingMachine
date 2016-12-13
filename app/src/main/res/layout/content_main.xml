@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ebookfrenzy.vendingmachine.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <GridLayout
+        android:orientation="vertical"
+        android:layout_width="240dp"
+        android:layout_height="266dp"
+        android:id="@+id/gridLayout">
+
+    <Button
+        android:layout_width="64dp"
+        android:layout_height="140dp"
+        android:id="@+id/mountainDew"
+        android:background="@mipmap/mountain"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+        <Button
+        android:layout_width="65dp"
+        android:layout_height="134dp"
+        android:id="@+id/dietMountainDew"
+        android:background="@mipmap/dietmountain"
+        android:layout_row="0"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="86dp"
+        android:layout_height="118dp"
+        android:id="@+id/pepsi"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:background="@mipmap/pepsi" />
+
+    <Button
+        android:layout_width="72dp"
+        android:layout_height="115dp"
+        android:id="@+id/dietPepsi"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:background="@mipmap/dietpepsi" />
+
+
+    <Button
+        android:layout_width="51dp"
+        android:layout_height="122dp"
+        android:id="@+id/dietRootBeer"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:background="@mipmap/dietrootbeer" />
+
+        <Button
+            android:layout_width="67dp"
+            android:layout_height="114dp"
+            android:id="@+id/awRootBeer"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@mipmap/rootbeer" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="265dp">
+
+        <TextView
+            android:text="Price for Each"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceOfEachTextView"
+            />
+
+        <TextView
+            android:text="1.50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/amountPriceTextView" />
+
+        <TextView
+            android:text="Quanitity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quanitityTextView" />
+
+        <TextView
+            android:text="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quanityTextView" />
+
+        <TextView
+            android:text="Total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalTextView" />
+
+        <TextView
+            android:text="0.00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalAmountTextView"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+
