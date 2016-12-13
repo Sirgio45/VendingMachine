@@ -25,7 +25,8 @@
         android:id="@+id/mountainDew"
         android:background="@mipmap/mountain"
         android:layout_row="0"
-        android:layout_column="1" />
+        android:layout_column="1"
+        android:onClick="mountainDewClicked"/>
 
         <Button
         android:layout_width="65dp"
@@ -33,7 +34,8 @@
         android:id="@+id/dietMountainDew"
         android:background="@mipmap/dietmountain"
         android:layout_row="0"
-        android:layout_column="0" />
+        android:layout_column="0"
+            android:onClick="dietMountainDewClicked"/>
 
     <Button
         android:layout_width="86dp"
@@ -41,7 +43,8 @@
         android:id="@+id/pepsi"
         android:layout_row="0"
         android:layout_column="2"
-        android:background="@mipmap/pepsi" />
+        android:background="@mipmap/pepsi"
+        android:onClick="pepsiClicked"/>
 
     <Button
         android:layout_width="72dp"
@@ -49,7 +52,8 @@
         android:id="@+id/dietPepsi"
         android:layout_row="1"
         android:layout_column="0"
-        android:background="@mipmap/dietpepsi" />
+        android:background="@mipmap/dietpepsi"
+        android:onClick="dietPepsiClicked"/>
 
 
     <Button
@@ -58,7 +62,8 @@
         android:id="@+id/dietRootBeer"
         android:layout_row="1"
         android:layout_column="2"
-        android:background="@mipmap/dietrootbeer" />
+        android:background="@mipmap/dietrootbeer"
+        android:onClick="dietRootBeerClicked"/>
 
         <Button
             android:layout_width="67dp"
@@ -66,7 +71,8 @@
             android:id="@+id/awRootBeer"
             android:layout_row="1"
             android:layout_column="1"
-            android:background="@mipmap/rootbeer" />
+            android:background="@mipmap/rootbeer"
+            android:onClick="rootBeerClicked"/>
 
     </GridLayout>
 
