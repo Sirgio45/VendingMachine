@@ -5,8 +5,30 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+   TextView totalAmount;
+    TextView totalQuanityAmount;
+
+    Button mountainDewB;
+    Button dietMountainDewB;
+    Button pepsiB;
+    Button dietPepsiB;
+    Button rootBeerB;
+    Button dietRootBeerB;
+
+
+    SodaNames mountainDew;
+    SodaNames dietMountainDew;
+    SodaNames pepsi;
+    SodaNames dietPepsi;
+    SodaNames rootBeer;
+    SodaNames dietRootBeer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,8 +37,88 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        initSodaNames();
+
+        onClickListener();
+        initScreenView();
+
+
 
     }
+
+
+
+    public void initSodaNames()
+    {
+        mountainDew=new SodaNames("Mountain Dew");
+        dietMountainDew= new SodaNames("Diet Mountain Dew");
+        pepsi=new SodaNames("Pepsi");
+        dietPepsi=new SodaNames("Diet Pepsi");
+        rootBeer = new SodaNames("A&W Root Beer");
+        dietRootBeer=new SodaNames("Diet A&W Root Beer");
+    }
+
+    public void onClickListener()
+    {
+        mountainDewB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+
+            }
+        });
+
+        dietMountainDewB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+            }
+        });
+
+        pepsiB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+            }
+        });
+
+        dietPepsiB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+            }
+        });
+
+        rootBeerB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+            }
+        });
+
+        dietRootBeerB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+            }
+        });
+    }
+
+
+    public void initScreenView()
+    {
+        totalAmount = (TextView)findViewById(R.id.totalAmountTextView);
+        totalQuanityAmount = (TextView)findViewById(R.id.quanityTextTextView);
+    }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,10 +135,15 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_settings)
+        {
+            this.finish();
             return true;
         }
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }
